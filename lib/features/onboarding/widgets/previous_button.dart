@@ -4,20 +4,22 @@ import 'package:flutter/material.dart';
 class PreviousButton extends StatelessWidget {
   final VoidCallback onPrevious;
 
-  const PreviousButton({required this.onPrevious});
+  const PreviousButton({super.key, required this.onPrevious});
 
   @override
   Widget build(BuildContext context) {
     return Positioned(
       bottom: 20.0,
       left: 20.0,
-      child: GestureDetector(
-        onTap: onPrevious,
-        child: Image.asset(
+      child: IconButton(
+        onPressed: onPrevious,
+        icon: Image.asset(
           'assets/images/previous_icon.png', // Use a clear name for the image asset
           width: 40.0,
           height: 40.0,
         ),
+        padding: EdgeInsets.zero, // Remove padding if needed
+        constraints: BoxConstraints(), // Remove any default constraints
       ),
     );
   }

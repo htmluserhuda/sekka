@@ -22,16 +22,19 @@ class NextOrGetStartedButton extends StatelessWidget {
               onPressed: () {
                 print("Get Started pressed");
               },
-              backgroundColor: Colors.white.withOpacity(0.8),
+              backgroundColor:
+                  Colors.white, // Set to white without transparency
               textColor: Colors.black,
             )
-          : GestureDetector(
-              onTap: onNext,
-              child: Image.asset(
+          : IconButton(
+              onPressed: onNext,
+              icon: Image.asset(
                 'assets/images/next_icon.png', // Use a clear name for the image asset
                 width: 40.0,
                 height: 40.0,
               ),
+              padding: EdgeInsets.zero, // Remove padding if needed
+              constraints: BoxConstraints(), // Remove any default constraints
             ),
     );
   }
