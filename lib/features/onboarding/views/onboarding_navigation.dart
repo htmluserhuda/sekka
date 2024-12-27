@@ -1,9 +1,9 @@
 // lib/views/components/onboarding_navigation.dart
 import 'package:flutter/material.dart';
-import 'custom_button.dart';
-import 'skip_button.dart';
-import 'previous_button.dart';
-import 'next_or_get_started_button.dart';
+import 'package:sekka/features/onboarding/widgets/next_or_get_started_button.dart';
+import 'package:sekka/features/onboarding/widgets/previous_button.dart';
+import 'package:sekka/features/onboarding/widgets/skip_button.dart';
+
 
 class OnboardingNavigation extends StatelessWidget {
   final int currentPage;

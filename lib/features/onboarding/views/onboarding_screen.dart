@@ -1,8 +1,9 @@
 // lib/views/onboarding_screen.dart
 import 'package:flutter/material.dart';
+import 'package:sekka/features/onboarding/views/onboarding_navigation.dart';
+
 import '../models/onboarding_content.dart';
 import 'onboarding_page.dart';
-import 'widgets/onboarding_navigation.dart';
 
 class OnboardingScreen extends StatefulWidget {
   @override
